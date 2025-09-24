@@ -296,12 +296,6 @@ void init_tests(void){
   valid_steer_req_count = 0;
   invalid_steer_req_count = 0;
 
-  // assumes autopark on safety mode init to avoid a fault. get rid of that for testing
-  tesla_autopark = false;
-
-  // reset MADS state to prevent leaking between tests
-  mads_set_system_state(false, false, false);
-  mads_button_press = MADS_BUTTON_UNAVAILABLE;
-  heartbeat_engaged_mads = false;
-  heartbeat_engaged_mads_mismatches = 0U;
+  // assumes summon on safety mode init to avoid a fault. get rid of that for testing
+  tesla_summon = false;
 }
