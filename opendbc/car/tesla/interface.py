@@ -50,7 +50,7 @@ class CarInterface(CarInterfaceBase):
       ret.flags |= TeslaFlags.FSD_14.value
       ret.safetyConfigs[0].safetyParam |= TeslaSafetyFlags.FSD_14.value
 
-    ret.dashcamOnly = candidate in (CAR.TESLA_MODEL_X,)  # dashcam only, pending find invalidLkasSetting signal
+    #ret.dashcamOnly = candidate in (CAR.TESLA_MODEL_X,)  # dashcam only, pending find invalidLkasSetting signal
 
     return ret
 
